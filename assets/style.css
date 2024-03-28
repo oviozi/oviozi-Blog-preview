@@ -29,10 +29,16 @@ body {
     padding: 1.2em 1.2em 0.7em;
 }
 
+figure {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
 .illustration {
     margin-bottom: 1.2em;
-    border-radius: 0.7em;
-    max-width: 100%;
+    border-radius: 1em;
+    width: 100%;
 }
 
 p {
@@ -88,6 +94,10 @@ footer p {
         box-shadow: 20px 20px 0px 0px rgba(1, 1, 1, 1);
     }
 
+    .illustration {
+        border-radius: 1.1em;
+    }
+
     .learning-label {
         font-size: 2rem;
         margin-top: 0.75em;
@@ -123,6 +133,10 @@ footer p {
         padding: 2.2em;
         border-radius: 2.25em;
 
+    }
+
+    .illustration {
+        border-radius: 1.3em;
     }
 
     .learning-label {
