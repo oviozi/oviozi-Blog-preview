@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap');
+
+:root {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: hsl(47, 88%, 63%);
+    font-family: 'Figtree', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.container {
+    background-color: white;
+    box-shadow: 8px 8px 0px 0px rgba(1, 1, 1, 1);
+    border: 1.9px solid black;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.25em;
+    margin: 1.5em;
+    padding: 1.2em 1.2em 0.7em;
+}
+
+.illustration {
+    margin-bottom: 1.2em;
+    border-radius: 0.7em;
+    max-width: 100%;
+}
+
+p {
+    line-height: 180%;
+}
+
+.learning-label {
+    font-family: 'Figtree', sans-serif;
+    font-weight: 800;
+    font-size: 1rem;
+    padding: 0.2em 0.7em;
+    margin: 0 0 0.75em;
+    display: inline-block;
+    background-color: hsl(47, 88%, 63%);
+    border-radius: 0.25em;
+}
+
+.date {
+    margin: 0 0 0.75em;
+    font-size: 0.68rem;
+}
+
+header {
+    font-family: 'Figtree', sans-serif;
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+p.description {
+    font-family: 'Figtree', sans-serif;
+    color: hsl(0, 0%, 50%);
+    font-size: 0.67rem;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+}
+
+.author {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+footer p {
+    padding-left: 0.75em;
+    font-weight: 800;
+    font-size: 0.8rem;
+}
+
+@media only screen and (min-width:500px) and (max-width:1024px) {
+    .container {
+        box-shadow: 20px 20px 0px 0px rgba(1, 1, 1, 1);
+    }
+
+    .learning-label {
+        font-size: 2rem;
+        margin-top: 0.75em;
+    }
+
+    .date {
+        font-size: 1.8rem;
+    }
+
+    header {
+        font-size: 2.5rem;
+    }
+
+    p.description {
+        font-size: 1.5rem;
+    }
+
+    .author {
+        width: 4em;
+        height: 4em;
+    }
+
+    footer p {
+        font-size: 1.8rem;
+    }
+}
+
+
+@media only screen and (min-width: 1025px) {
+    .container {
+        max-width: 70em;
+        box-shadow: 40px 30px 0px 0px rgba(1, 1, 1, 1);
+        padding: 2.2em;
+        border-radius: 2.25em;
+
+    }
+
+    .learning-label {
+        margin-top: 1.3em;
+        font-size: 3rem;
+    }
+
+    p {
+        line-height: 140%;
+    }
+
+    .date {
+        font-size: 2.8rem;
+    }
+
+    header {
+        font-size: 4.5rem;
+    }
+
+    header:hover {
+        color: hsl(47, 88%, 63%);
+        cursor: pointer;
+    }
+
+    p.description {
+        font-size: 3.1rem;
+        line-height: 150%;
+        margin-bottom: 0.5em;
+    }
+
+    .author {
+        width: 6em;
+        height: 6em;
+    }
+
+    footer p {
+        font-size: 2.75rem;
+    }
+}
